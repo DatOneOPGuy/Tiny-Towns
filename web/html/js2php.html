@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      // random number between 1 and 20
+      var x = Math.floor(Math.random() * 20) + 1;
+
+      function handleForm() {
+        document.getElementById('jsval').value = x;
+        document.getElementById('myform').submit();
+      }
+    </script>
+  </head>
+  <body>
+    <form id="myform" method="post" action="php/js2php.php">
+      <input type="hidden" name="jsval" id="jsval" value=""/>
+      <!-- Other fields could go here. -->
+      <input type="submit" value="OK" onclick="handleForm();"/>
+    </form>
+  </body>
+</html>

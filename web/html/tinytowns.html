@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Towns</title>
+    <link rel="stylesheet" href='css/tinytowns.css'></head>
+<body>
+    <main>
+        <div class="plans">
+            <div class="plan">
+                <div class="plan-top">
+                    <h3>Cottage ☘</h3>
+                </div>
+                <div class="plan-picture cottage-image">
+                    <div class="identifier cottage-identifier"></div>
+                </div>
+                <div class="plan-layout">
+                    <div class="layout-clear"></div>
+                    <div class="layout wheat"></div>
+                    <div class="layout brick"></div>
+                    <div class="layout glass"></div>
+                </div>
+                <div class="plan-details">
+                    <p>3 ❂ if this building is fed.</p>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="plan-top">
+                    <h3>Farm</h3>
+                </div>
+                <div class="plan-picture farm-image">
+                    <div class="identifier farm-identifier"></div>
+                </div>
+                <div class="plan-layout">
+                    <div class="layout wheat"></div>
+                    <div class="layout wheat"></div>
+                    <div class="layout wood"></div>
+                    <div class="layout wood"></div>
+                </div>
+                <div class="plan-details">
+                    <p>Feeds 4 ☘ buildings at any location.</p>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="plan-top">
+                    <h3>Chapel</h3>
+                </div>
+                <div class="plan-picture chapel-image">
+                    <div class="identifier chapel-identifier"></div>
+                </div>
+                <div class="plan-layout three-column">
+                    <div class="layout-clear"></div>
+                    <div class="layout-clear"></div>
+                    <div class="layout glass"></div>
+                    <div class="layout stone"></div>
+                    <div class="layout glass"></div>
+                    <div class="layout stone"></div>
+                </div>
+                <div class="plan-details">
+                    <p>1 ❂ for each fed Cottage.</p>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="plan-top">
+                    <h3>Market</h3>
+                </div>
+                <div class="plan-picture market-image">
+                    <div class="identifier market-identifier"></div>
+                </div>
+                <div class="plan-layout three-column">
+                    <div class="layout-clear"></div>
+                    <div class="layout wood"></div>
+                    <div class="layout-clear"></div>
+                    <div class="layout stone"></div>
+                    <div class="layout glass"></div>
+                    <div class="layout stone"></div>
+                </div>
+                <div class="plan-details">
+                    <p>1 ❂ for each market in same row/column as another market</p>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="plan-top">
+                    <h3>Trading Post</h3>
+                </div>
+                <div class="plan-picture trading-post-image">
+                    <div class="identifier trading-post-identifier"></div>
+                </div>
+                <div class="plan-layout three-column">
+                    <div class="layout stone"></div>
+                    <div class="layout wood"></div>
+                    <div class="layout clear"></div>
+                    <div class="layout stone"></div>
+                    <div class="layout wood"></div>
+                    <div class="layout brick"></div>
+                </div>
+                <div class="plan-details">
+                    <p>1 ❂. Can be treated as a wild resource for future buildings.</p>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="plan-top">
+                    <h3>Tavern</h3>
+                </div>
+                <div class="plan-picture tavern-image">
+                    <div class="identifier tavern-identifier"></div>
+                </div>
+                <div class="plan-layout three-column">
+                    <div class="layout-clear"></div>
+                    <div class="layout-clear"></div>
+                    <div class="layout-clear"></div>
+                    <div class="layout brick"></div>
+                    <div class="layout brick"></div>
+                    <div class="layout glass"></div>
+                </div>
+                <div class="plan-details">
+                    <p>1 ❂ based on number of Taverns built.</p>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="plan-top">
+                    <h3>Well</h3>
+                </div>
+                <div class="plan-picture well-image">
+                    <div class="identifier well-identifier"></div>
+                </div>
+                <div class="plan-layout three-column">
+                    <div class="layout-clear"></div>
+                    <div class="layout-clear"></div>
+                    <div class="layout-clear"></div>
+                    <div class="layout-clear"></div>
+                    <div class="layout wood"></div>
+                    <div class="layout stone"></div>
+                </div>
+                <div class="plan-details">
+                    <p>1 ❂ for every adjacent Cottage.</p>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="plan-top">
+                    <h3>Cathedral of Caterina</h3>
+                </div>
+                <div class="plan-picture cathedral-image">
+                    <div class="identifier cathedral-identifier"></div>
+                </div>
+                <div class="plan-layout">
+                    <div class="layout-clear"></div>
+                    <div class="layout wheat"></div>
+                    <div class="layout stone"></div>
+                    <div class="layout glass"></div>
+                </div>
+                <div class="plan-details">
+                    <p>1 ❂ for every unique building type in your town. (Excluding this)</p>
+                </div>
+            </div>
+        </div>
+        <div class="end-game-container">
+             <button onclick = "end_game()" class="end-game-button">End Game</button>
+        </div>
+
+        <div class="board-and-resources">
+           
+            <div class="grid">
+                <div class="grid-cell outline " id="cell-1"></div>
+                <div class="grid-cell outline " id="cell-2"></div>
+                <div class="grid-cell outline " id="cell-3"></div>
+                <div class="grid-cell outline " id="cell-4"></div>
+                <div class="grid-cell outline " id="cell-5"></div>
+                <div class="grid-cell outline " id="cell-6"></div>
+                <div class="grid-cell outline " id="cell-7"></div>
+                <div class="grid-cell outline " id="cell-8"></div>
+                <div class="grid-cell outline " id="cell-9"></div>
+                <div class="grid-cell outline " id="cell-10"></div>
+                <div class="grid-cell outline " id="cell-11"></div>
+                <div class="grid-cell outline " id="cell-12"></div>
+                <div class="grid-cell outline " id="cell-13"></div>
+                <div class="grid-cell outline " id="cell-14"></div>
+                <div class="grid-cell outline " id="cell-15"></div>
+                <div class="grid-cell outline " id="cell-16"></div>
+            </div>
+            <div id="resource-cards">
+                <div class="resource selectableResource" id = "1">
+                    <div class="resource-top">
+                        <h3 id = "resource1-text"></h3>
+                    </div>
+                    <div class="resource-material" id = "resource1-material"></div>
+                </div>
+                <div class="resource selectableResource" id = "2">
+                    <div class="resource-top" id = "resource2-top">
+                        <h3 id = "resource2-text"></h3>
+                    </div>
+                    <div class="resource-material" id = "resource2-material"></div>
+                </div>
+                <div class="resource selectableResource" id = "3">
+                    <div class="resource-top">
+                        <h3 id = "resource3-text"></h3>
+                    </div>
+                    <div class="resource-material" id = "resource3-material"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/js/tinytowns.js"></script>
+</body>
+</html>

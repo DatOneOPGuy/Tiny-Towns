@@ -1,0 +1,327 @@
+@import url(https://fonts.googleapis.com/css?family=Cinzel);
+
+body {
+  gap: 0px 0px;
+  margin: 10px;
+  padding: 0;
+  font-family: 'Cinzel', sans-serif;
+  background-image: url(/images/wood-texture.jpg); 
+  height: 750px;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  margin-top: -50px;
+  margin-left: 100px;
+}
+
+.grid-cell {
+  width: 95px;
+  height: 95px;
+  border: 1px solid #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.outline {
+  border: 2px solid #000000;
+  background-color: #dede81;
+}
+
+.plans {
+    display: flex;
+    grid-area: plans;
+    gap: 20px;
+    width: 100%;
+    max-width: 1300px;
+    padding: 10px 0;
+    margin-bottom: 40px;
+    margin-left: 30px;
+}
+
+.plan {
+    border: 1px solid #aaa;
+    border-radius: 16px;
+    background-color: #f3ebe0;
+    height: 250px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan h3 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    font-size: 11px;
+    text-align: center;
+    margin: 0;
+}
+
+.plan-top {
+    background-color: #f5e191;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom: 1px solid #000;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan-details {
+  height: 50px;
+  background-color: #f5e191;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-top: 1px solid #000;
+  margin-top: auto;
+  text-align: c;
+}
+
+.plan-picture {
+    position: relative;
+    border-bottom: 1px solid #000;
+    height: 105px;
+    min-height: 85px;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    display: flex;
+}
+
+.identifier {
+    position: absolute;
+    top: -6px;
+    right: -1px;
+    width: 15px;
+    height: 15px;
+}
+
+.cottage-identifier {
+    background-color: rgb(139, 139, 255);
+}
+
+.farm-identifier {
+    background-color: rgb(255, 0, 0);
+}
+
+.chapel-identifier {
+    background-color: rgb(255, 123, 0);
+}
+
+.market-identifier {
+    background-color: rgb(231, 189, 0);
+}
+
+.trading-post-identifier {
+    background-color: rgb(0, 0, 0);
+}
+
+.tavern-identifier {
+    background-color: rgb(48, 130, 0);
+}
+
+.well-identifier {
+    background-color: rgb(176, 176, 176);
+}
+
+.cathedral-identifier {
+    background-color: rgb(255, 46, 231);
+}
+
+.board-and-resources {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+#resource-cards {
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    margin-top: -30px;
+    grid-area: resource-cards;
+    padding-left: 100px;
+}
+
+.resource {
+    border: 1px solid #aaa;
+    height: 220px;
+    width: 180px;
+    border-radius: 16px;
+    text-align: center;
+    background-color: #f3ebe0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resource-top {
+    background-color: #f5e191;
+    height: 50px;
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #000;
+}
+
+.resource-material {
+    height: 60px;
+    width: 60px;
+    border: 5px solid #000;
+    margin-top: 45px;
+}
+
+.wheat {
+    background-color: #f2c356;
+}
+
+.brick {
+    background-color: #dc4025;
+    outline-color: #dc4025;
+}
+
+.glass {
+    background-color: #559cc8;
+
+}
+
+.stone {
+    background-color: #b4a582;
+}
+
+.wood {
+    background-color: #5a3c1e;
+}
+
+.plan-layout {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    height: 40px;
+}
+
+.three-column {
+    grid-template-columns: auto auto auto;
+}
+
+.layout-clear {
+    height: 20px;
+    width: 20px;
+}
+
+.layout {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #f3ebe0;
+}
+.cottage-image {
+    background-image: url('/images/cottage-image.webp');
+}
+
+.farm-image {
+    background-image: url('/images/farm-image.png');
+    background-size: cover;
+}
+
+.chapel-image {
+    background-image: url('/images/chapel-image.png');
+}
+
+.market-image {
+    background-image: url('/images/market-image.png');
+}
+
+.trading-post-image {
+    background-image: url('/images/trading-post-image.png');
+}
+
+.tavern-image {
+    background-image: url('/images/tavern-image.png');
+}
+
+.well-image {
+    background-image: url('/images/well-image.png');
+}
+
+.cathedral-image {
+    background-image: url('/images/cathedral-image.png');
+}
+.selectable:hover {
+    border: 2px solid #7ebae6;
+    cursor: pointer;
+}
+
+.selectablegrid:hover {
+    border: 2px solid #7ebae6;
+    cursor: pointer;
+}
+
+.selectableResource:hover {
+    border: 5px solid #ff0000;
+    cursor: pointer;
+}
+.canbebuilt {
+    border: 6px solid #e42323;
+    cursor: pointer;
+}
+.selected{
+    border: 2px solid #7ebae6;
+}
+
+.grid-cell.active{
+    cursor:pointer;
+    border: 2px solid #7ebae6;
+}
+
+.grid-resource{
+    height: 35px;
+    width: 35px;
+    border: 1px solid #000;
+}
+
+.end-game-button {
+    background-color: #ff4444;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+
+.end-game-button:hover {
+    background-color: #cc0000;
+}
+
+.end-game-container {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;  /* Centers vertically */
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 10px;
+}
